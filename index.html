@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <title>Tanuj Joshi-Portfolio</title>
+    <meta name="description"
+        content="Interactive portfolio of Tanuj Joshi — a passionate developer studying Computer Science Engineering (AI & ML). Explore projects, skills & more in a hand-drawn gallery experience.">
+    <meta name="author" content="Tanuj Joshi">
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- Google Fonts: Hand-drawn + Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gloria+Hallelujah&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <div class="navbar-wrap" id="navbarWrap">
+        <nav class="navbar" id="navbar">
+            <a href="#hero" class="nav-logo">Tanuj J.</a>
+            <div class="nav-sep"></div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <a href="TanujJoshi_resume.pdf" download class="nav-resume">↓ Resume</a>
+            <button class="nav-hamburger" id="menuBtn" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="menuClose" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="#hero" class="mob-link">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#gallery" class="mob-link">Projects</a>
+        <a href="#contact" class="mob-link">Contact</a>
+        <a href="TanujJoshi_resume.pdf" download class="mob-link" style="color:var(--accent);">Resume ↓</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <!-- Doodle decorations -->
+        <div class="doodle doodle-1">✦</div>
+        <div class="doodle doodle-2">◯</div>
+        <div class="doodle doodle-3">△</div>
+        <div class="doodle doodle-4">☆</div>
+        <div class="doodle doodle-5">✧</div>
+
+        <!-- Tape strips -->
+        <div class="tape tape-1"></div>
+        <div class="tape tape-2"></div>
+        <div class="tape tape-3"></div>
+
+        <!-- Corner brackets -->
+        <div class="hero-corner corner-tl"><svg viewBox="0 0 60 60">
+                <path d="M5 55 L5 5 L55 5" stroke-linecap="round" />
+            </svg></div>
+        <div class="hero-corner corner-tr"><svg viewBox="0 0 60 60">
+                <path d="M5 55 L5 5 L55 5" stroke-linecap="round" />
+            </svg></div>
+        <div class="hero-corner corner-bl"><svg viewBox="0 0 60 60">
+                <path d="M5 55 L5 5 L55 5" stroke-linecap="round" />
+            </svg></div>
+        <div class="hero-corner corner-br"><svg viewBox="0 0 60 60">
+                <path d="M5 55 L5 5 L55 5" stroke-linecap="round" />
+            </svg></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">✎ Curious About How Everything Works</div>
+            <h1 class="hero-title">
+                <span class="first-name">Tanuj</span>
+                <span class="last-name">Joshi</span>
+            </h1>
+            <p class="hero-subtitle">Building things that live on the internet ✨</p>
+            <div class="hero-arrow">
+                <span>explore</span>
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">01</div>
+                <p class="section-label">The Studio</p>
+                <h2 class="section-title">About <span class="underline-sketch">Me</span></h2>
+            </div>
+            <div class="about-layout">
+                <div class="about-photo-frame reveal">
+                    <div class="photo-tape"></div>
+                    <img src="pfpu.png" alt="Tanuj Joshi — Developer and AI/ML Enthusiast">
+                    <p class="about-photo-caption">~ that's me! ~</p>
+                </div>
+                <div class="about-text reveal">
+                    <p><strong>Hey, I’m Tanuj!</strong> a developer who enjoys building clean, interactive, and
+                        user-focused applications.</p>
+                    <p>I’m currently exploring AI/ML and full-stack development while constantly experimenting with new
+                        technologies, improving performance, and creating projects that solve real problems.</p>
+                    <p>Outside tech, I’m into gaming, fitness, and finding ways to make life a little more optimized.
+                    </p>
+                    <div class="about-details">
+                        <div class="about-detail-card stagger-child">
+                            <div class="detail-label">Interests</div>
+                            <div class="detail-value">Opening & Fixing Random Stuff, Gaming
+                            </div>
+                        </div>
+                        <div class="about-detail-card stagger-child">
+                            <div class="detail-label">Education</div>
+                            <div class="detail-value">CSE (AI & ML)</div>
+                        </div>
+                        <div class="about-detail-card stagger-child">
+                            <div class="detail-label">Stack</div>
+                            <div class="detail-value">Full-Stack Dev</div>
+                        </div>
+                        <div class="about-detail-card stagger-child">
+                            <div class="detail-label">Location</div>
+                            <div class="detail-value">India 🇮🇳</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hand-drawn divider -->
+    <div class="hand-divider">
+        <svg viewBox="0 0 200 12" fill="none" stroke="#ccc" stroke-width="1.2" stroke-linecap="round">
+            <path d="M0,6 Q25,1 50,6 T100,6 T150,6 T200,6" />
+        </svg>
+    </div>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">02</div>
+                <p class="section-label">The Toolkit</p>
+                <h2 class="section-title">Skills & <span class="underline-sketch">Technologies</span></h2>
+                <p class="section-desc">Tools and languages pinned to my gallery wall.</p>
+            </div>
+            <div class="skills-wall">
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🐍</span>
+                    <div class="skill-label">Python</div>
+                    <div class="skill-sub">Language</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">☕</span>
+                    <div class="skill-label">Java</div>
+                    <div class="skill-sub">Language</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">⚡</span>
+                    <div class="skill-label">C / C++</div>
+                    <div class="skill-sub">Language</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">✦</span>
+                    <div class="skill-label">JavaScript</div>
+                    <div class="skill-sub">Language</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">◇</span>
+                    <div class="skill-label">HTML5</div>
+                    <div class="skill-sub">Web</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">◈</span>
+                    <div class="skill-label">CSS3</div>
+                    <div class="skill-sub">Web</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🗄️</span>
+                    <div class="skill-label">MySQL</div>
+                    <div class="skill-sub">Database</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">⎇</span>
+                    <div class="skill-label">Git</div>
+                    <div class="skill-sub">Tool</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🎨</span>
+                    <div class="skill-label">Photoshop</div>
+                    <div class="skill-sub">Design & Editing</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">▲</span>
+                    <div class="skill-label">Canva</div>
+                    <div class="skill-sub">Design & Editing</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🎬</span>
+                    <div class="skill-label">Premiere Pro</div>
+                    <div class="skill-sub">Design & Editing</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🎞️</span>
+                    <div class="skill-label">DaVinci Resolve</div>
+                    <div class="skill-sub">Design & Editing</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">✂️</span>
+                    <div class="skill-label">CapCut</div>
+                    <div class="skill-sub">Design & Editing</div>
+                </div>
+                <div class="skill-pin stagger-child">
+                    <span class="skill-emoji">🎹</span>
+                    <div class="skill-label">FL Studio</div>
+                    <div class="skill-sub">Audio Production</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS / PROJECTS ===== -->
+    <section id="gallery" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">03</div>
+                <p class="section-label">The Gallery</p>
+                <h2 class="section-title">Achievements & <span class="underline-sketch">Projects</span></h2>
+                <p class="section-desc">Milestones framed on the wall of my journey.</p>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-frame stagger-child" id="corp-exp-card" style="cursor: pointer;">
+                    <div class="frame-bar frame-bar-orange"></div>
+                    <div class="frame-body">
+                        <div class="frame-stamp">★ Click to view</div>
+                        <div class="frame-icon">💼</div>
+                        <h3 class="frame-title">Corporate Experience</h3>
+                        <p class="frame-desc">Gained practical experience through various internships, working with
+                            professional teams on cybersecurity and software development projects.</p>
+                        <span class="frame-tag">Internships</span>
+                    </div>
+                </div>
+                <div class="gallery-frame stagger-child">
+                    <div class="frame-bar frame-bar-teal"></div>
+                    <div class="frame-body">
+                        <div class="frame-stamp">★ Certified</div>
+                        <div class="frame-icon">📜</div>
+                        <h3 class="frame-title">Certifications</h3>
+                        <p class="frame-desc">Earned certifications in Python Essentials 1 and Data Structures &
+                            Algorithms, strengthening my foundation in computer science fundamentals.</p>
+                        <span class="frame-tag">Courses</span>
+                    </div>
+                </div>
+                <div class="gallery-frame stagger-child" id="projects-card" style="cursor: pointer;">
+                    <div class="frame-bar frame-bar-purple"></div>
+                    <div class="frame-body">
+                        <div class="frame-stamp">★ Click to view</div>
+                        <div class="frame-icon">🚀</div>
+                        <h3 class="frame-title">Projects</h3>
+                        <p class="frame-desc">A collection of hardware, software, and web development projects
+                            demonstrating my diverse technical skill set.</p>
+                        <span class="frame-tag">View All</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hand-drawn divider -->
+    <div class="hand-divider">
+        <svg viewBox="0 0 200 12" fill="none" stroke="#ccc" stroke-width="1.2" stroke-linecap="round">
+            <path d="M0,6 Q25,11 50,6 T100,6 T150,6 T200,6" />
+        </svg>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center;">
+                <div class="section-number" style="text-align:center;">04</div>
+                <p class="section-label">The Mailbox</p>
+                <h2 class="section-title">Let's <span class="underline-sketch">Connect</span></h2>
+                <p class="section-desc" style="margin:12px auto 0;">Open to opportunities, collaborations, and
+                    conversations.</p>
+            </div>
+            <div class="contact-postcard reveal">
+                <div class="postcard-stamp"><span>📮</span></div>
+                <div class="postcard-left">
+                    <h3>Send me a note!</h3>
+                    <p>Whether it's a project idea, a job opportunity, or just a hello — I'd love to hear from you. Pick
+                        your favourite channel on the right and let's start talking.</p>
+                </div>
+                <div class="postcard-right">
+                    <a href="https://wa.me/919408852166" target="_blank" class="postcard-item">
+                        <div class="postcard-icon">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="postcard-info-label">WhatsApp</div>
+                            <div class="postcard-info-value">+91 9408852166</div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tanuj-joshi-8a9298320/" target="_blank" class="postcard-item">
+                        <div class="postcard-icon">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="postcard-info-label">LinkedIn</div>
+                            <div class="postcard-info-value"><span
+                                    style="color:var(--accent);text-decoration:underline wavy;text-underline-offset:3px;">View
+                                    Profile →</span></div>
+                        </div>
+                    </a>
+                    <a href="mailto:tanujyjoshi@gmail.com" class="postcard-item">
+                        <div class="postcard-icon">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="postcard-info-label">Email</div>
+                            <div class="postcard-info-value">tanujyjoshi@gmail.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-social-row">
+            <a href="https://www.linkedin.com/in/tanuj-joshi-8a9298320/" target="_blank" class="footer-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                </svg>
+            </a>
+            <a href="mailto:tanujyjoshi@gmail.com" class="footer-social" aria-label="Email">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+            </a>
+            <a href="https://wa.me/919408852166" target="_blank" class="footer-social" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+            </a>
+        </div>
+        <p class="footer-copy">crafted with ✏️ by <span>Tanuj Joshi</span> · © 2026</p>
+    </footer>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="corpModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="modal-title">Corporate Internships</h3>
+            <div class="internship-list">
+                <div class="internship-item" data-cert="certi1.png">
+                    <h4>Cyber Security & Penetration Testing</h4>
+                    <p>Hacktify Cybersecurity</p>
+                </div>
+                <div class="internship-item" data-cert="certi2.png">
+                    <h4>Developer Intern</h4>
+                    <p>Kodace Infotech Private Limited</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PROJECTS MODAL ===== -->
+    <div class="modal-overlay" id="projectsModal">
+        <div class="modal-content">
+            <button class="modal-close" id="projectsModalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="modal-title">Projects</h3>
+            <div class="internship-list">
+                <div class="internship-item" style="cursor: default;">
+                    <h4>Human Following Robot</h4>
+                    <p>CSE course, First Semester</p>
+                    <p style="margin-top: 8px; color: var(--ink);">Led the development of a human-following robot as
+                        part of a team project using Arduino.</p>
+                </div>
+                <div class="internship-item" style="cursor: default;">
+                    <h4>Electromagnetic Induction</h4>
+                    <p>CSE course, First Semester</p>
+                    <p style="margin-top: 8px; color: var(--ink);">Designed and led a team project demonstrating
+                        wireless energy transfer using electromagnetic induction, showcasing its use in wireless mobile
+                        charging.</p>
+                </div>
+                <div class="internship-item" style="cursor: default;">
+                    <h4>Website for Kodace Infotech</h4>
+                    <p style="margin-top: 8px; color: var(--ink);">Designed and built the official company website:
+                        <br><a href="https://www.kodaceinfotech.com/" target="_blank"
+                            style="text-decoration: underline wavy; text-underline-offset: 3px; color: var(--accent);">kodaceinfotech.com</a>
+                    </p>
+                </div>
+                <div class="internship-item" style="cursor: default;">
+                    <h4>SMS Dashboard</h4>
+                    <p style="margin-top: 8px; color: var(--ink);">Designed an SMS dashboard for a company to send SMS
+                        updates to their clients regarding delivery status.</p>
+                </div>
+                <div class="internship-item" style="cursor: default;">
+                    <h4>CRM Prototype</h4>
+                    <p style="margin-top: 8px; color: var(--ink);">Made a prototype Customer Relationship Management
+                        (CRM) system for Kodace Infotech Private Limited.</p>
+                </div>
+                <div class="internship-item" style="cursor: default;">
+                    <h4>Wagedeck (Ongoing)</h4>
+                    <p style="margin-top: 8px; color: var(--ink);">Currently working and leading a team to develop an
+                        ASP.NET Core app called Wagedeck. It is a management and payroll solution built to replace
+                        fragmented, manual HR processes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CERTIFICATE MODAL ===== -->
+    <div class="modal-overlay" id="certModal" style="z-index: 10000;">
+        <div class="modal-content"
+            style="max-width: 800px; text-align: center; background: transparent; border: none; box-shadow: none;">
+            <button class="modal-close" id="certModalClose" style="top: -20px; right: -20px; z-index: 2;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="" alt="Certificate" id="certModalImg" class="cert-modal-img">
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
